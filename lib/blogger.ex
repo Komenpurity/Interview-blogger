@@ -39,8 +39,7 @@ defmodule Blogger do
 
  # Fetching url using a library
 
-    def header do
-      HTTPoison.get! "https://jsonplaceholder.typicode.com/todos/1"
+    def header do    
 
       case HTTPoison.get("https://jsonplaceholder.typicode.com/todos/1") do
         {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
@@ -54,3 +53,4 @@ defmodule Blogger do
     end
 
 end
+
