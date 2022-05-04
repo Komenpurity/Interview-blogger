@@ -33,6 +33,7 @@ defmodule Blogger do
         |> List.to_string
         |> String.upcase 
         |> String.split_at(3)  
+        |> Tuple.to_list
     end
 
 
